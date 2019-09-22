@@ -1,0 +1,31 @@
+.body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header"
+                         "content1"
+                         "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 8fr 1fr;
+
+}
+.header {
+    max-height: 100;
+    grid-area: header;
+    background-color: royalblue;
+}
+.content {
+    grid-area: content1;
+}
+.footer {
+    grid-area: footer;
+    background-color: royalblue;
+}
+.img-class{
+    max-width: 100%;
+    max-height: 100%;
+}
