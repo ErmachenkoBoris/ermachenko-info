@@ -20,6 +20,9 @@
 }
 .content {
     grid-area: content1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer {
     grid-area: footer;
@@ -28,4 +31,19 @@
 .img-class{
     max-width: 100%;
     max-height: 100%;
+}
+.olderdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 50vh;
+    background-color: blue;
+}
+
+.youngerdiv {
+    width: 50%;
+    height: 50%;
+    background-color: red;
 }
