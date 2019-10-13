@@ -73,6 +73,7 @@ a {
     height: 15vh;
     background: linear-gradient( to bottom, rgb(138, 129, 129) , white );
     clip-path: polygon(0vh 0vh, 100vw 0vw, 85vw 15vh, 15vw 15vh);
+    -webkit-clip-path: polygon(0vh 0vh, 100vw 0vw, 85vw 15vh, 15vw 15vh);
     z-index: -2;
 
 }
@@ -82,6 +83,7 @@ a {
     width: 15vw;
     height: 100vh;
     background: linear-gradient( to left, rgb(97, 90, 90) , white );
+    -webkit-clip-path: polygon(  0vw 15vh, 15vw 0vh, 15vw 100vh, 0vw 85vh);
     clip-path: polygon(  0vw 15vh, 15vw 0vh, 15vw 100vh, 0vw 85vh);
     z-index: -2;
     
@@ -93,6 +95,7 @@ a {
     width: 100vw;
     height: 15vh;
     background: linear-gradient( to top, rgb(53, 51, 51) , white );
+    -webkit-clip-path: polygon(0vw 15vh, 15vw 0vh, 85vw 0vh, 100vw 15vh);
     clip-path: polygon(0vw 15vh, 15vw 0vh, 85vw 0vh, 100vw 15vh);
     z-index: -2;
     
@@ -104,6 +107,7 @@ a {
     width: 15vw;
     height: 100vh;
     background: linear-gradient( to right,  rgb(97, 89, 89) , white );
+    -webkit-clip-path: polygon(0vh 0vh, 15vw 15vh, 15vw 85vh, 0vw 100vh);
     clip-path: polygon(0vh 0vh, 15vw 15vh, 15vw 85vh, 0vw 100vh);
     z-index: -2;
     
