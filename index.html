@@ -8,8 +8,8 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body class="body">
-        <a class="daft-button" href="./draft.html">Draft page</a>
-
+        <!-- <a class="daft-button" href="./draft.html">Draft page</a> -->
+        <div class="daft-button">... I told you not to do this </div>
         <span class="trapezoid-1 border"></span>
 
         <span  class="trapezoid-2 border"></span>
@@ -22,8 +22,23 @@
             <img class="superback-img" src="./img/door.png">
         </span> -->
         <div id='lightning'>
-            <div class="greatings">I am Boris, beach </div>
+            <div class="greatings">I am Boris,<br>beach </div>
         </div>
+        <div class="menu">
+            <div class="menu__buttons">
+                    <input type="button" value="purple" onclick="changeColor('#4B0082')"/>
+                    <input type="button" value="blue" onclick="changeColor('#191970')"/>
+                    <input type="button" value="grey" onclick="changeColor('#696969')"/>
+                    <input type="button" value="black" onclick="changeColor('black')"/>
+            </div>
+        </div>
+        <div class="menu_danger">
+                <div class="menu__buttons_danger">
+                        <a href="#"  class="danger-button" onclick="destroyAll()">
+                                DO NOT PRESS !
+                        </a>
+                </div>
+            </div>
     <script src="js/main.js"></script>
 
     </body>
