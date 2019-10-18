@@ -4,10 +4,11 @@
 //   document.querySelector(".youngerdiv").onmouseout=function(){
 //     document.querySelector(".olderdiv").style.backgroundColor = "blue";
 //   }
-
+var canvasColorGLobal = '#000000';
+var canvas = '';
   (()=>{
     const TWO_PI = 2*Math.PI;
-    const canvas = document.createElement('canvas');
+    canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     const offSet = 6;
 
@@ -25,6 +26,7 @@
     let toggle = 0;
 
     let canvasColor = '#232332';
+    canvasColorGLobal= '#232332';
     let circles = [];
     let circleCount = 2;
 
@@ -112,7 +114,7 @@
     }
 
     function init() {
-      canvas.style.background = canvasColor;
+      canvas.style.background = canvasColorGLobal;
       document.getElementById('lightning').appendChild(canvas);
       for(let i=0; i< circleCount; i++){
         circles.push(new Circle() );
@@ -132,3 +134,31 @@
     init();
     loop();
   })();
+
+ function  changeColor(color) {
+  document.querySelector('.trapezoid-1').style.background =`linear-gradient( to bottom, ${color} , white )`; 
+  document.querySelector('.trapezoid-2').style.background =`linear-gradient( to left, ${color} , white )`; 
+  document.querySelector('.trapezoid-3').style.background =`linear-gradient( to top, ${color} , white )`; 
+  document.querySelector('.trapezoid-4').style.background =`linear-gradient( to right, ${color} , white )`; 
+  canvas.style.background =`radial-gradient( ${color} , white )`;
+  }
+  // animation-name: none
+  // animation-duration: 0s
+  // animation-timing-function: ease
+  // animation-delay: 0s
+  // animation-iteration-count: 1
+  // animation-direction: normal
+  // animation-fill-mode: none
+  // animation-play-state: running
+  function  destroyAll() {
+    console.log(document.querySelector('.trapezoid-1').style.animation);
+    document.querySelector('.trapezoid-1').style.animation = " destroy1 3000ms ease 1000ms 1 normal forwards"; 
+    document.querySelector('.trapezoid-2').style.animation = " destroy2 3000ms 1500ms 1 normal forwards"; 
+    document.querySelector('.trapezoid-3').style.animation = " destroy3 3000ms 1200ms 1 normal forwards";  
+    document.querySelector('.trapezoid-4').style.animation = " destroy4 3000ms 1700ms 1 normal forwards"; 
+    document.querySelector('.menu_danger').style.animation = " destroy6 3000ms 1700ms 1 normal forwards"; 
+    document.querySelector('.daft-button').style.animation = " destroy8 4500ms 1700ms 1 normal forwards"; 
+    canvas.style.animation = " destroy5 2500ms 1700ms 1 normal forwards"; 
+    document.querySelector('.menu__buttons').style.animation = " destroy5 2500ms 1700ms 1 normal forwards"; 
+    document.getElementById('lightning').style.animation = " destroy5 2500ms 1700ms 1 normal forwards"; 
+    }

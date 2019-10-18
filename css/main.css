@@ -77,6 +77,8 @@ a {
     clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
     z-index: -2;
+    animation-name:  pause;
+    animation-duration: 2000ms;
 
 }
 .trapezoid-2 {
@@ -88,6 +90,8 @@ a {
     clip-path: polygon(  0% 15%, 100% 0%, 100% 100%, 0% 85%);
     -webkit-clip-path: polygon(  0% 15%, 100% 0%, 100% 100%, 0% 85%);
     z-index: -2;
+    animation-name:  pause;
+    animation-duration: 2000ms;
     
 }
 
@@ -100,6 +104,8 @@ a {
     -webkit-clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
     z-index: -2;
+    animation-name:  pause;
+    animation-duration: 2000ms;
     
 }
 
@@ -112,6 +118,13 @@ a {
     -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
     z-index: -2;
+    animation-name:  pause;
+    animation-duration: 2000ms;
+    -webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+-ms-animation-fill-mode: forwards;
+-o-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
     
 }
 
@@ -148,7 +161,7 @@ align-items: center;
 .greatings {
 
     color: white;
-    font-size: 10vh;
+    font-size: 6vh;
 
     position: absolute;
     z-index: 100;
@@ -156,4 +169,174 @@ align-items: center;
 body{
     width: 100%;
     height: 100%;
+}
+
+.menu {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu__buttons {
+    position: absolute;
+    bottom: 20px;
+}
+
+.menu_danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu__buttons_danger {
+        position: absolute;
+        top: 60vh;
+        left: 70vw;
+    }
+.danger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15vh;
+    min-height: 15vh;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+    user-select: none;
+    padding: .7em 1.5em;
+    border-radius: 100%;
+    outline: none;
+    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
+    box-shadow:
+     0 12px rgb(86,38,6),
+     0 6px 30px rgba(0,0,0,.4),
+     inset 0 2px rgba(255,255,255,.3),
+     inset 0 0 6px rgba(255,255,255,.5);
+    transition: .2s;
+  } 
+  .danger-button:hover {
+    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
+  }
+  .danger-button:active {
+    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
+    box-shadow:
+     0 4px rgb(86,38,6),
+     0 2px 12px rgba(0,0,0,.4),
+     inset 0 2px rgba(255,255,255,.3),
+     inset 0 0 6px rgba(255,255,255,.5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+  }
+
+  /* animation: nev 5s infinite alternate; */
+@keyframes pause {
+    }
+
+@keyframes destroy1 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+}
+
+@keyframes destroy2 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+
+
+}
+
+@keyframes destroy3 {
+    0%   {transform: translate(10px); bottom: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);bottom: 0vh;} 
+	100% {bottom: -40vh; }
+
+}
+
+
+@keyframes destroy4 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+
+}
+
+@keyframes destroy5 {
+    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);top: 30 vh} 
+	100% {top: 140vh; }
+
+
+}
+
+@keyframes destroy6 {
+    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);top: 30 vh} 
+	100% {transform: translateY(1060px)}
+
+
+}
+
+@keyframes destroy7 {
+    0%   {transform: translate(10px);} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);} 
+	100% {transform: translateY(1200px)}
+
+
+}
+
+@keyframes destroy8 {
+    0%   {opacity: 0;} 
+    80%   {opacity: 0;} 
+	100% {opacity: 1;}
+}
+
+canvas {
+    position: absolute;
+    animation-direction: 2000ms;
+}
+
+body{
+    overflow:hidden;
 }
