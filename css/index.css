@@ -1,3 +1,8 @@
+@import "animationsDestroy.css";
+.letter {
+    display: inline;
+    font-size: 6vh;
+    }
 .body {
     width: 100%;
     height: 100%;
@@ -20,7 +25,21 @@
     grid-area: header;
     background-color: royalblue;
 }
+.content-main {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    width: 60vw;
+    height: 60vh;
+    grid-area: content1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .content {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
     grid-area: content1;
     display: flex;
     justify-content: center;
@@ -148,16 +167,7 @@ border: none;
     bottom: -5%;
 }
 
-#lightning {
-position: absolute;
-top: 15%;
-left: 15%;
-width: 70%;
-height: 70%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+
 .greatings {
 
     color: white;
@@ -167,7 +177,9 @@ align-items: center;
     z-index: 100;
 }
 body{
+    
     width: 100%;
+    overflow:hidden;
     height: 100%;
 }
 
@@ -227,116 +239,16 @@ align-items: center;
     transform: translate(0, 4px);
   }
 
-  /* animation: nev 5s infinite alternate; */
-@keyframes pause {
-    }
+  .stick{
+      display: inline;
+      animation: animationStick;
+      animation-duration: 400ms;
+      animation-iteration-count: infinite;
+  }
+  @keyframes animationStick {
+    49%{opacity: 1;}
+    50%{opacity: 0;}
+100%{opacity: 0;}
+  }
 
-@keyframes destroy1 {
-    0%   {transform: translate(10px); top: 0vh;} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(50px);} 
-    21%   {transform: translate(-100px);top: 0vh;} 
-	100% {top: 140vh; }
-}
-
-@keyframes destroy2 {
-    0%   {transform: translate(10px); top: 0vh;} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(50px);} 
-    21%   {transform: translate(-100px);top: 0vh;} 
-	100% {top: 140vh; }
-
-
-}
-
-@keyframes destroy3 {
-    0%   {transform: translate(10px); bottom: 0vh;} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(50px);} 
-    21%   {transform: translate(-100px);bottom: 0vh;} 
-	100% {bottom: -40vh; }
-
-}
-
-
-@keyframes destroy4 {
-    0%   {transform: translate(10px); top: 0vh;} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(50px);} 
-    21%   {transform: translate(-100px);top: 0vh;} 
-	100% {top: 140vh; }
-
-}
-
-@keyframes destroy5 {
-    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(80px);} 
-    21%   {transform: translate(-160px);top: 30 vh} 
-	100% {top: 140vh; }
-
-
-}
-
-@keyframes destroy6 {
-    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(80px);} 
-    21%   {transform: translate(-160px);top: 30 vh} 
-	100% {transform: translateY(1060px)}
-
-
-}
-
-@keyframes destroy7 {
-    0%   {transform: translate(10px);} 
-    3%   {transform: translate(-20px);} 
-    6%   {transform: translate(20px);} 
-    9%   {transform: translate(-40px);} 
-    12%   {transform: translate(40px);} 
-    15%   {transform: translate(-80px);} 
-    18%   {transform: translate(80px);} 
-    21%   {transform: translate(-160px);} 
-	100% {transform: translateY(1200px)}
-
-
-}
-
-@keyframes destroy8 {
-    0%   {opacity: 0;} 
-    80%   {opacity: 0;} 
-	100% {opacity: 1;}
-}
-
-canvas {
-    position: absolute;
-    animation-direction: 2000ms;
-}
-
-body{
-    overflow:hidden;
-}
+ 

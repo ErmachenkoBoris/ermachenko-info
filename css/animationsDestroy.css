@@ -1,0 +1,103 @@
+@keyframes pause {
+    }
+
+@keyframes destroy1 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+}
+
+@keyframes destroy2 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+
+
+}
+
+@keyframes destroy3 {
+    0%   {transform: translate(10px); bottom: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);bottom: 0vh;} 
+	100% {bottom: -40vh; }
+
+}
+
+
+@keyframes destroy4 {
+    0%   {transform: translate(10px); top: 0vh;} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(50px);} 
+    21%   {transform: translate(-100px);top: 0vh;} 
+	100% {top: 140vh; }
+
+}
+
+@keyframes destroy5 {
+    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);top: 30 vh} 
+	100% {top: 140vh; }
+
+
+}
+
+@keyframes destroy6 {
+    0%   {transform: translate(10px);  background-color: red; top: 30 vh} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);top: 30 vh} 
+	100% {transform: translateY(1060px)}
+
+
+}
+
+@keyframes destroy7 {
+    0%   {transform: translate(10px);} 
+    3%   {transform: translate(-20px);} 
+    6%   {transform: translate(20px);} 
+    9%   {transform: translate(-40px);} 
+    12%   {transform: translate(40px);} 
+    15%   {transform: translate(-80px);} 
+    18%   {transform: translate(80px);} 
+    21%   {transform: translate(-160px);} 
+	100% {transform: translateY(1200px)}
+
+
+}
+
+@keyframes destroy8 {
+    0%   {opacity: 0;} 
+    80%   {opacity: 0;} 
+	100% {opacity: 1;}
+}
