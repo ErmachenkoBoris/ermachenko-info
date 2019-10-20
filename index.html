@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body class="body">
-        <a class="daft-button" href="html/intro.html">Draft page</a>
+        <!-- <a class="daft-button" href="html/intro.html">Draft page</a> -->
         
         <!-- <div class="daft-button">... I told you not to do this </div> -->
         <span class="trapezoid-1 border"></span>
@@ -22,29 +22,28 @@
         <!-- <span  class="superback border">
             <img class="superback-img" src="./img/door.png">
         </span> -->
+        <div id="quote2"  class="quote2 letter"> </div>
         <div class="content-main">
-            <div class="greetings letter" id="greetings">
+                
+            <div class="greetings letter greetings-wrapper" id="greetings">
                     <div class="greetings letter" id="greetingsLetters">
                     </div>
             <div class="stick">|</div>
             </div>
+            <div  class="bot1 button-text" onclick="destroyAll()">
+                DO NOT PRESS !
+            </div>
+            
         </div>
 
         <div class="menu">
             <div class="menu__buttons">
-                    <input type="button" value="purple" onclick="changeColor('#4B0082')"/>
-                    <input type="button" value="blue" onclick="changeColor('#191970')"/>
-                    <input type="button" value="grey" onclick="changeColor('#696969')"/>
-                    <input type="button" value="black" onclick="changeColor('black')"/>
+                    <input class="menu__buttons_input" type="button" value="purple" onclick="changeColor('#4B0082')"/>
+                    <input class="menu__buttons_input" type="button" value="blue" onclick="changeColor('#191970')"/>
+                    <input class="menu__buttons_input" type="button" value="grey" onclick="changeColor('#696969')"/>
+                    <input class="menu__buttons_input" type="button" value="black" onclick="changeColor('black')"/>
             </div>
         </div>
-        <div class="menu_danger">
-                <div class="menu__buttons_danger">
-                        <a href="#"  class="danger-button" onclick="destroyAll()">
-                                DO NOT PRESS !
-                        </a>
-                </div>
-            </div>
     <script src="js/destroy.js"></script>
     <script src="js/changeColor.js"></script>
     <script src="js/index.js"></script>
