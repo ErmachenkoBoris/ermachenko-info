@@ -334,7 +334,7 @@ color: white
 
 .button-text{
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 1.5vh;
 }
 
 @keyframes pulsate{
