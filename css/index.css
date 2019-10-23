@@ -116,6 +116,8 @@ a {
 }
 
 .trapezoid-3 {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -146,6 +148,45 @@ a {
 -o-animation-fill-mode: forwards;
 animation-fill-mode: forwards;
     
+}
+.super_button {
+    cursor: pointer;
+    background: linear-gradient( to top,   rgb(97, 89, 89) , white  );
+    width: 25%;
+    height: 100%;
+    
+    
+}
+.button-1{
+    
+    width: 35%;
+    -webkit-clip-path: polygon(60% 0%, 80% 0%, 50% 100%, 0% 100%);
+    clip-path: polygon(60% 0%, 80% 0%, 50% 100%, 0% 100%);
+}
+
+.button-2{
+
+    -webkit-clip-path: polygon(25% 0%, 60% 0%, 40% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 60% 0%, 40% 100%, 0% 100%);
+}
+
+.button-3{
+
+    -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+.button-4{
+
+    -webkit-clip-path: polygon(40% 0%, 75% 0%, 100% 100%, 65% 100%);
+    clip-path: polygon(40% 0%, 75% 0%, 100% 100%, 65% 100%);
+}
+
+.button-5{
+
+    width: 35%;
+    -webkit-clip-path: polygon(20% 0%, 40% 0%, 100% 100%, 50% 100%);
+    clip-path: polygon(20% 0%, 40% 0%, 100% 100%, 50% 100%);
 }
 
 .border {
@@ -256,7 +297,7 @@ color: white
   .stick{
       display: inline;
       animation: animationStick;
-      animation-duration: 400ms;
+      animation-duration: 700ms;
       animation-iteration-count: infinite;
   }
   @keyframes animationStick {
@@ -268,16 +309,20 @@ color: white
   .greetings-wrapper {
       padding: 10%;
   }
+  .greetings {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
 
   .bot1{
+    opacity: 0.7;
      display: flex;
      align-items: center;
      justify-content: center;
-      width: 14vh;
+      width: 21vh;
       height: 14vh;
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
-    border-radius: 50%;
+    border-radius: 3%;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -333,8 +378,9 @@ color: white
 }
 
 .button-text{
-    font-weight: 500;
-    font-size: 1.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
 }
 
 @keyframes pulsate{
