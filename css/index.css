@@ -1,30 +1,22 @@
 @import "animationsDestroy.css";
-.letter {
-    display: inline;
-    font-size: 6vh;
-    }
+@import "figure/button.css";
+@import "figure/trapezoid.css";
+
 .body {
+    position: fixed;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
 }
-.container {
-    height: 100%;
-    display: grid;
-    grid-template-areas: "header"
-                         "content1"
-                         "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 8fr 1fr;
 
+.letter {
+    display: inline;
+    font-size: 6vh;
 }
-.header {
-    max-height: 100;
-    grid-area: header;
-    background-color: royalblue;
-}
+
 .content-main {
     position: absolute;
     top: 15vh;
@@ -37,161 +29,12 @@
     align-items: center;
     flex-direction: column;
 }
-.content {
-    position: absolute;
-    top: 15vh;
-    left: 15vw;
-    grid-area: content1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .footer {
     grid-area: footer;
     background-color: royalblue;
 }
-.img-class{
-    max-width: 100%;
-    max-height: 100%;
-}
-.olderdiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    background-color: blue;
-}
 
-.youngerdiv {
-    width: 50%;
-    height: 50%;
-    background-color: red;
-}
-
-a {
-    font-weight: 500;
-    color: cornflowerblue;
-    cursor: pointer;
-}
-
-.daft-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    height: 4%;
-    font-size: 20px;
-    position: absolute;
-    top: 47%;
-    left: 45%;
-}
-
-.trapezoid-1 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 15%;
-    background: linear-gradient( to bottom, rgb(138, 129, 129) , white );
-    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
-    z-index: -2;
-    animation-name:  pause;
-    animation-duration: 2000ms;
-
-}
-.trapezoid-2 {
-    position: absolute;
-    right: 0;
-    width: 15%;
-    height: 100%;
-    background: linear-gradient( to left, rgb(97, 90, 90) , white );
-    clip-path: polygon(  0% 15%, 100% 0%, 100% 100%, 0% 85%);
-    -webkit-clip-path: polygon(  0% 15%, 100% 0%, 100% 100%, 0% 85%);
-    z-index: -2;
-    animation-name:  pause;
-    animation-duration: 2000ms;
-    
-}
-
-.trapezoid-3 {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 15%;
-    background: linear-gradient( to top, rgb(53, 51, 51) , white );
-    -webkit-clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
-    clip-path: polygon(0% 100%, 15% 0%, 85% 0%, 100% 100%);
-    z-index: -2;
-    animation-name:  pause;
-    animation-duration: 2000ms;
-    
-}
-
-.trapezoid-4 {
-    position: absolute;
-    left: 0;
-    width: 15%;
-    height: 100%;
-    background: linear-gradient( to right,  rgb(97, 89, 89) , white );
-    -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
-    z-index: -2;
-    animation-name:  pause;
-    animation-duration: 2000ms;
-    -webkit-animation-fill-mode: forwards;
--moz-animation-fill-mode: forwards;
--ms-animation-fill-mode: forwards;
--o-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
-    
-}
-.super_button {
-    cursor: pointer;
-    background: linear-gradient( to top,   rgb(97, 89, 89) , white  );
-    width: 25%;
-    height: 100%;
-    
-    
-}
-.button-1{
-    
-    width: 35%;
-    -webkit-clip-path: polygon(60% 0%, 80% 0%, 50% 100%, 0% 100%);
-    clip-path: polygon(60% 0%, 80% 0%, 50% 100%, 0% 100%);
-}
-
-.button-2{
-
-    -webkit-clip-path: polygon(25% 0%, 60% 0%, 40% 100%, 0% 100%);
-    clip-path: polygon(25% 0%, 60% 0%, 40% 100%, 0% 100%);
-}
-
-.button-3{
-
-    -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
-}
-
-.button-4{
-
-    -webkit-clip-path: polygon(40% 0%, 75% 0%, 100% 100%, 65% 100%);
-    clip-path: polygon(40% 0%, 75% 0%, 100% 100%, 65% 100%);
-}
-
-.button-5{
-
-    width: 35%;
-    -webkit-clip-path: polygon(20% 0%, 40% 0%, 100% 100%, 50% 100%);
-    clip-path: polygon(20% 0%, 40% 0%, 100% 100%, 50% 100%);
-}
-
-.border {
-border: none;
-}
 .superback {
     position: absolute;
     top: 15%;
@@ -202,6 +45,7 @@ border: none;
     border-color: rgb(182, 170, 170);
     z-index: -1;
 }
+
 .superback-img {
     display: none;
     position: absolute;
@@ -209,117 +53,41 @@ border: none;
     bottom: -5%;
 }
 
-
 .greatings {
-
     color: white;
     font-size: 6vh;
-
     position: absolute;
     z-index: 100;
 }
-body{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-}
 
 .menu {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.menu__buttons {
-    width: 50%;
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.menu__buttons_input {
-    border-radius: 1vh;
-font-size: 3vh;
-}
-.menu__buttons_input:hover {
-transform: scale(1.5);
-background-color: gray;
-color: white
-}
-
-.menu_danger {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .menu__buttons_danger {
-        position: absolute;
-        top: 60vh;
-        left: 70vw;
-    }
-.danger-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 15vh;
-    min-height: 15vh;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 -1px rgba(0,0,0,.5);
-    user-select: none;
-    padding: .7em 1.5em;
-    border-radius: 100%;
-    outline: none;
-    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
-    box-shadow:
-     0 12px rgb(86,38,6),
-     0 6px 30px rgba(0,0,0,.4),
-     inset 0 2px rgba(255,255,255,.3),
-     inset 0 0 6px rgba(255,255,255,.5);
-    transition: .2s;
-  } 
-  .danger-button:hover {
-    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
-  }
-  .danger-button:active {
-    background: rgb(95, 14, 14) linear-gradient(rgb(106, 26, 26), rgb(147, 36, 36) 80%);
-    box-shadow:
-     0 4px rgb(86,38,6),
-     0 2px 12px rgba(0,0,0,.4),
-     inset 0 2px rgba(255,255,255,.3),
-     inset 0 0 6px rgba(255,255,255,.5);
-    -webkit-transform: translate(0, 4px);
-    transform: translate(0, 4px);
-  }
+}
 
-  .stick{
-      display: inline;
-      animation: animationStick;
-      animation-duration: 700ms;
-      animation-iteration-count: infinite;
-  }
-  @keyframes animationStick {
-    49%{opacity: 1;}
-    50%{opacity: 0;}
-100%{opacity: 0;}
-  }
+.stick {
+    display: inline;
+    animation: animationStick;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+}
 
-  .greetings-wrapper {
+.greetings-wrapper {
       padding: 10%;
-  }
-  .greetings {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  }
+}
 
-  .bot1{
+.greetings {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.botton-destroy {
     opacity: 0.7;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-      width: 21vh;
-      height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21vh;
+    height: 14vh;
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
     border-radius: 3%;
@@ -327,26 +95,26 @@ color: white
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
     color: white;
-        text-decoration:none;
+    text-decoration:none;
     line-height: 20px;
     margin: 20px auto;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  animation: pulsate 1.2s linear infinite;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    animation: pulsate 1.2s linear infinite;
 }
 
-.bot1:before {
+.botton-destroy:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -364,38 +132,44 @@ color: white
   transition-property: transform, opacity;
 }
 
-.bot1:hover {
+.botton-destroy:hover {
     cursor: pointer;
   -webkit-transform: translateY(-2vh);
   -ms-transform: translateY(-2vh);
   transform: translateY(-2vh);
 }
-.bot1:hover:before {
+
+.botton-destroy:hover:before {
   opacity: 1;
   -webkit-transform: translateY(2vh);
   -ms-transform: translateY(2vh);
   transform: translateY(2vh);
 }
 
-.button-text{
+.botton-destroy-text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     font-size: 2vh;
 }
 
-@keyframes pulsate{
-    30%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;}
-    50%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.911)) rgb(160, 157, 157) repeat-x;}
-    70%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;}
-}
-
-.quote2{
+.quote-after {
     height: 10%;
     width: 20%;
     position: absolute;
     top:45%;
-    left:40%
-    
+    left:40%;  
+}
+
+@keyframes animationStick {
+    49%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes pulsate {
+    30%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;}
+    50%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.911)) rgb(160, 157, 157) repeat-x;}
+    70%{background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(253, 253, 253, 0.658)) rgb(39, 37, 37) repeat-x;}
 }
 
  
