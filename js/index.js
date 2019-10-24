@@ -2,8 +2,8 @@ let interval_id=0;
 const greetings ="Hi, my name is Boris";
 const greetingsArr = greetings.split('');
 
-const quote2 ="I told you :)";
-const quote2Arr = quote2.split('');
+const quoteAfter ="I told you :)";
+const quoteAfterArr = quoteAfter.split('');
 let greetingAnimateEngine = (function(
     ){
         let currentLetter = 0;
@@ -16,15 +16,15 @@ let greetingAnimateEngine = (function(
             currentLetter++;
         }
     })();
-let uote2AnimateEngine = (function(
+let quoteAfterAnimateEngine = (function(
         ){
             let currentLetter = 0;
             return function(){
-                if(currentLetter===quote2Arr.length) return 0;
+                if(currentLetter===quoteAfterArr.length) return 0;
                 let div = document.createElement('div');
                 div.className = "letter";
-                div.innerHTML = `${quote2Arr[currentLetter]}`;
-                document.getElementById("quote2").append(div);
+                div.innerHTML = `${quoteAfterArr[currentLetter]}`;
+                document.getElementById("quote-after").append(div);
                 currentLetter++;
             }
         })();
@@ -45,7 +45,7 @@ window.onblur = function() {
     interval_id = 0;
 };
 let i = 0;
-function writeQuote2(){
-    setInterval(uote2AnimateEngine, speedWriting);
+function writeQuoteAfter(){
+    setInterval(quoteAfterAnimateEngine, speedWriting);
 }
 
