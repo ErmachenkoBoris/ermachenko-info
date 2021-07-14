@@ -49,3 +49,10 @@ function writeQuoteAfter(){
     setInterval(quoteAfterAnimateEngine, speedWriting);
 }
 
+(function() {
+	console.log('privet');
+	const cat = "cat"
+    cat
+    dog
+}) ();
+
