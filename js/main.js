@@ -132,6 +132,7 @@
     init();
     loop();
   })();
+  
 (function() {
 	console.log('privet');
 	const cat = "cat"
